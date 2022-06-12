@@ -14,10 +14,17 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text(
-          'Hello World',
-        ),
+      backgroundColor: Colors.orange,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset(
+            'asset/img/logo.png',
+          ),
+          CircularProgressIndicator(
+            color: Colors.white,
+          ),
+        ],
       ),
     );
   }
